@@ -1,6 +1,6 @@
 # AI Travel Itinerary Planner
 
-A full-stack application for AI-powered travel itinerary planning using Google's Gemini AI technology.
+A full-stack application for AI-powered travel itinerary planning using RAG and Google's Gemini AI technology.
 
 ## 🚀 Overview
 
