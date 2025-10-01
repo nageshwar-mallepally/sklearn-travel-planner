@@ -181,6 +181,12 @@ class TravelPlanner:
 
         ACCOMMODATION STRATEGY:
         {combined_hotels}
+        
+        Local Transportation:
+        {local_transport_context}
+        
+        ACCOMMODATION:
+        Recommended areas: {', '.join(hotel_recommendations)}
 
         Please provide the itinerary in this comprehensive format:
 
@@ -197,6 +203,9 @@ class TravelPlanner:
 
         ACCOMMODATION STRATEGY  
         [Recommend where to stay with specific area details]
+        
+        Local Transportation:
+        [Recommended transportation methods within the destination]
 
         DAILY ITINERARY
         Day 1: Arrival and Initial Exploration
@@ -212,7 +221,7 @@ class TravelPlanner:
         • Afternoon: [Departure preparations]
 
         TRAVEL TIPS
-        • Budget Planning: [Cost estimates and money-saving tips]
+        • Budget Planning: [Cost estimates and money-saving tips and provide Total cost]
         • Local Customs & Etiquette: [Important cultural notes]
         • Safety Advice: [Safety precautions and emergency contacts]
         • Packing Guide: [Seasonal packing recommendations]
@@ -501,7 +510,7 @@ def main():
                     
                     # Download button
                     st.download_button(
-                        label="📥 Download Itinerary as Text",
+                        label="📥 Download Itinerary as PDF",
                         data=itinerary,
                         file_name=f"travel_plan_{to_place}_{vacation_days}days.txt",
                         mime="text/plain"
