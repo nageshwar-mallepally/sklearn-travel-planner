@@ -510,7 +510,7 @@ def main():
                     
                     # Download button
                     st.download_button(
-                        label="📥 Download Itinerary as PDF",
+                        label="📥 Download Itinerary",
                         data=itinerary,
                         file_name=f"travel_plan_{to_place}_{vacation_days}days.txt",
                         mime="text/plain"
